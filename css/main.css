@@ -197,3 +197,84 @@ footer span {
 	color: #77a466;
 	font-size: 1.5em;
 }
+
+/****** Media queries to adjust contents to TABLET and DESKTOP*****/
+
+/* Tablet styles */
+@media all and (min-width: 768px) {
+	.bottom-section {
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.menu {
+		padding: 0 16px 0 0;
+	}
+}
+
+
+/* Desktop styles */
+@media all and (min-width: 1200px) {
+
+	header {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	header h1 {
+		width: 33%;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header h1 span {
+		color: #77a466;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	  list-style-type: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875em;
+		display: flex;
+		padding: 0 10px 0 10px;
+	}
+
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+	}
+
+	.bottom-section {
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.menu {
+		padding: 0 16px 0 0;
+	}
+}
